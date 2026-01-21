@@ -2,7 +2,7 @@
 import { Button, FormField, Loader } from "../../components";
 // import { checkIfImage } from "../../utils";
 import { money } from "../../assets";
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 
 interface FormData {
     name: string;
@@ -23,10 +23,11 @@ const CreateCampaign = () => {
         deadline: '',
         image: '',
     })
-    const handleSubmit = (e: HTMLFormElement) => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         try {
             e.preventDefault();
             setIsLoading(true);
+            console.log("e", e.target);
         } catch (error) {
             console.log("error:", error);
         } finally {

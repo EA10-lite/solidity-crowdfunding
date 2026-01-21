@@ -29,7 +29,7 @@ const FormField = ({
           onChange={(e)=> handleChange(e.target.value)}
           rows={10}
           placeholder={placeholder}
-          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px]  focus:outline-none focus-visible:ring-primary focus-visible:ring-[1px] transition-all"
+          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px]  focus:outline-none focus-visible:ring-[#1dc071] focus-visible:ring-[1px] transition-all"
         />
       ) : (
         <input
@@ -39,7 +39,7 @@ const FormField = ({
           type={type}
           step="0.1"
           placeholder={placeholder}
-          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px]  focus:outline-none focus-visible:ring-primary focus-visible:ring-[1px] transition-all"
+          className="py-[15px] sm:px-[25px] px-[15px] outline-none border-[1px] border-[#3a3a43] bg-transparent font-epilogue text-white text-[14px] placeholder:text-[#4b5264] rounded-[10px] sm:min-w-[300px]  focus:outline-none focus-visible:ring-[#1dc071] focus-visible:ring-[1px] transition-all"
         />
       )}
     </label>
